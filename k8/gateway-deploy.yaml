@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: health-app-spring-gateway
-          image: health-app-spring-gateway:1.0.0
+          image: health-app-spring-cloud-gateway:1.0.0
           ports:
             - containerPort: 9762
 
