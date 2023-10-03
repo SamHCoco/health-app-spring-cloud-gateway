@@ -34,3 +34,6 @@ docker rmi health-app-spring-cloud-gateway:$version
 docker load < health-app-spring-cloud-gateway.tar
 
 kubectl apply -f k8/
+
+sudo rm health-app-spring-cloud-gateway.tar
+sudo ./mvnw clean

@@ -8,11 +8,11 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class GatewayConfig {
 
-    private static final String USER_SERVICE = "user-service";
+    private static final String USER_SERVICE = "health-app-user-service";
     private static final int USER_SERVICE_PORT = 9000;
 
-    private static final String HEALTH_SERVICE = "health-service";
-    private static final String STORE_SERVICE = "store-service";
+    private static final String HEALTH_SERVICE = "health-app-health-service";
+    private static final String STORE_SERVICE = "health-app-store-service";
 
     @Bean
     public RouteLocator routeLocator(RouteLocatorBuilder builder) {
